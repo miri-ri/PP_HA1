@@ -1,16 +1,94 @@
+
+
 <!DOCTYPE html>
-
 <html>
-
-<head>
-
-<title>Page</title>
-<link rel="stylesheet"href="css/bootstrap.css">
-<script src="js/bootstrap.js"></script>
-</head>
-
-<body>
-
-</body>
-
+  <head>
+    <title>To Do</title>
+    <link rel="stylesheet"href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <style>
+      body {
+      padding: 50px;
+      background-color: #F5F5F5;
+      }
+      table {
+      background-color: #FFFFFF;
+      border-collapse: collapse;
+      width: 100%;
+	  border: thin solid gainsboro;
+      }
+      td, th {
+      text-align: left;
+      padding: 8px;
+      }
+      #spalteCheck { width: 0px }
+      #spalteButtons { width: 87px }
+      .addBtn {
+      padding: 10px;
+      width: 80px;
+      background: #FFFFFF;
+      color: #666666;
+      float: right;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+      border-radius: 17px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 3px 2opx 0 rgba(0,0,0,0.19);
+      }
+      body {
+      width:95%;
+      margin-left:auto;
+      margin-right:auto;
+      }
+	  th, caption {
+	  background-color: #C5E7DB;
+      font-weight: 700;
+	  }
+    </style>
+  </head>
+  <body>
+    <h1>To Do List</h1>
+    <br>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div><button class="addBtn"><i class="fa fa-plus"></i> Add</button></div>
+    <div>
+      <table>
+	    <colgroup>
+		  <col id="spalteCheck">
+		  <col>
+          <col id="spalteButtons">
+        </colgroup>
+        <tr>
+          <th></th>
+          <th>Todo</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="scales" name=""
+            unchecked></td>
+          <td>lorem.</td>
+          <td>
+			<div class="btn-group btn-group-sm" role="group" aria-label="Basic outlined example">
+				<button type="normalBtn" class="btn btn-outline-primary"><i class="fa fa-pencil fa-fw"></i></button>
+				<button type="normalBtn" class="btn btn-outline-primary"><i class="fa fa-trash fa-fw"></i></button>
+			</div>
+		  </td>        
+		</tr>
+		<tr>
+          <td><input type="checkbox" id="scales" name=""
+            unchecked></td>
+          <td>Lorem ipsum </td>
+		  <td>
+			<div class="btn-group btn-group-sm" role="group" aria-label="Basic outlined example">
+				<button type="normalBtn" class="btn btn-outline-primary"><i class="fa fa-pencil fa-fw"></i></button>
+				<button type="normalBtn" class="btn btn-outline-primary"><i class="fa fa-trash fa-fw"></i></button>
+			</div>
+		  </td>        
+		</tr>
+      </table>
+    </div>
+  </body>
 </html>
+
