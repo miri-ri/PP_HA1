@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -15,14 +13,16 @@
       background-color: #FFFFFF;
       border-collapse: collapse;
       width: 100%;
-	  border: thin solid gainsboro;
+      border: thin solid gainsboro;
       }
       td, th {
       text-align: left;
       padding: 8px;
       }
-      #spalteCheck { width: 0px }
-      #spalteButtons { width: 87px }
+      #colCheck { width: 0px }
+      #colProgress { width: 90px }
+      #colDate { width: 120px }
+      #colButtons { width: 87px }
       .addBtn {
       padding: 10px;
       width: 80px;
@@ -41,10 +41,10 @@
       margin-left:auto;
       margin-right:auto;
       }
-	  th, caption {
-	  background-color: #C5E7DB;
+      th, caption {
+      background-color: #C5E7DB;
       font-weight: 700;
-	  }
+      }
     </style>
   </head>
   <body>
@@ -55,38 +55,46 @@
     <div><button class="addBtn"><i class="fa fa-plus"></i> Add</button></div>
     <div>
       <table>
-	    <colgroup>
-		  <col id="spalteCheck">
-		  <col>
-          <col id="spalteButtons">
+        <colgroup>
+          <col id="colCheck">
+          <col>
+          <col id="colDate">
+          <col id="colProgress">
+          <col id="colButtons">
         </colgroup>
         <tr>
           <th></th>
           <th>Todo</th>
+          <th>Deadline</th>
+          <th>Progress</th>
           <th></th>
         </tr>
         <tr>
           <td><input type="checkbox" id="scales" name=""
             unchecked></td>
-          <td>lorem.</td>
+          <td>Test1</td>
+          <td>25. April 2022</td>
+          <td>20% </td>
           <td>
-			<div class="btn-group btn-group-sm" role="group" aria-label="Basic outlined example">
-				<button type="normalBtn" class="btn btn-outline-primary"><i class="fa fa-pencil fa-fw"></i></button>
-				<button type="normalBtn" class="btn btn-outline-primary"><i class="fa fa-trash fa-fw"></i></button>
-			</div>
-		  </td>        
-		</tr>
-		<tr>
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic outlined example">
+              <button type="normalBtn" class="btn btn-outline-primary"><i class="fa fa-pencil fa-fw"></i></button>
+              <button type="normalBtn" class="btn btn-outline-primary"><i class="fa fa-trash fa-fw"></i></button>
+            </div>
+          </td>
+        </tr>
+        <tr>
           <td><input type="checkbox" id="scales" name=""
             unchecked></td>
           <td>Lorem ipsum </td>
-		  <td>
-			<div class="btn-group btn-group-sm" role="group" aria-label="Basic outlined example">
-				<button type="normalBtn" class="btn btn-outline-primary"><i class="fa fa-pencil fa-fw"></i></button>
-				<button type="normalBtn" class="btn btn-outline-primary"><i class="fa fa-trash fa-fw"></i></button>
-			</div>
-		  </td>        
-		</tr>
+          <td>03. Mai 2022</td>
+          <td>0% </td>
+          <td>
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic outlined example">
+              <button type="normalBtn" class="btn btn-outline-primary"><i class="fa fa-pencil fa-fw"></i></button>
+              <button type="normalBtn" class="btn btn-outline-primary"><i class="fa fa-trash fa-fw"></i></button>
+            </div>
+          </td>
+        </tr>
       </table>
     </div>
   </body>
